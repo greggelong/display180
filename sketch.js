@@ -1,7 +1,7 @@
 let theta1 = 0;
 let theta2 = 0;
 let letts = "_abcdefghijklmnopqrstuvwxyz";
-let message = "hello_jenn_this_is_greg";
+let message = "hello_greg_";  // needs a space a the end not the beginning 
 let start = 180;
 let end = 360;
 let angle = start;
@@ -33,9 +33,7 @@ function draw() {
   end = 180+(mynum*7)
   //print(angle)
   //dex++; // add this when it reaches 
-  if (dex > message.length - 1) {
-    dex = 0;
-  }
+  
   // go forward
   //print(start, end);
 
@@ -51,6 +49,9 @@ function draw() {
       start = angle;
       end = temp;
       dex++
+      if (dex > message.length - 1) {
+        dex = 0;
+      }
       //print(start, end);
     }
   }
@@ -68,6 +69,9 @@ function draw() {
       start = angle;
       end = temp;
       dex++
+      if (dex > message.length - 1) {
+        dex = 0;
+      }
       //print(start, end);
     }
   }
