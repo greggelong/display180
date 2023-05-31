@@ -1,7 +1,7 @@
 let theta1 = 0;
 let theta2 = 0;
-let letts = "abcdefghijklmnopqrstuvwxyz";
-let message = "greg";
+let letts = "_abcdefghijklmnopqrstuvwxyz";
+let message = "hello_jenn_this_is_greg";
 let start = 180;
 let end = 360;
 let angle = start;
@@ -16,7 +16,7 @@ function setup() {
   strokeWeight(3);
   angleMode(DEGREES);
   textAlign(CENTER, CENTER)
-  frameRate(10);
+  frameRate(15);
 }
 
 function draw() {
